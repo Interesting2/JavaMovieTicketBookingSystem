@@ -1,0 +1,6 @@
+transaction_number, user, movie_name, cinema, session_time, tickets, total_price, payment_method, date_at_booking
+202111031531401,MasterP,The Last Duel,MontelloCinema,18:20/6/11/2021,1 Front child tickets 3 Front student tickets 5 Mid adult tickets 2 Back senior tickets ,26,Credit Card,2021/11/03
+202111031533042,MasterP,Malignant,TownHallCinema,19:00/6/11/2021,2 Front child tickets 5 Mid student tickets 4 Front adult tickets 2 Back senior tickets ,247,Gift Card,2021/11/03
+202111031604181,MasterP,Jungle,TownHallCinema,17:00/4/11/2021,2 Front child tickets 3 Back student tickets 2 Front adult tickets ,133,Credit Card,2021/11/03
+202111031338350,MasterP,Malignant,TownHallCinema,15:45/4/11/2021,4 Front adult tickets ,120,Credit Card,2021/11/03
+202111031427000,MasterP,Malignant,TownHallCinema,15:45/4/11/2021,5 Front child tickets 0 Front student tickets ,140,Credit Card,2021/11/03

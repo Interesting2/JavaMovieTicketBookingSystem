@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.6588628762541806" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicketBooking.Actions.TicketIssueStage">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="160.0" prefWidth="100.0">
+            <children>
+
+                <Label fx:id="totalPriceLabel" alignment="CENTER" layoutX="-33.0" layoutY="23.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="47.0" prefWidth="521.0">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                </Label>
+
+                <Label fx:id="childLabel" layoutX="38.0" layoutY="135.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="100.0" text="Child:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="childQuantityCombo" layoutX="130.0" layoutY="157.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="0" />
+                            <String fx:value="1" />
+                            <String fx:value="2" />
+                            <String fx:value="3" />
+                            <String fx:value="4" />
+                            <String fx:value="5" />
+                            <String fx:value="6" />
+                            <String fx:value="7" />
+                            <String fx:value="8" />
+                            <String fx:value="9" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <ComboBox fx:id="childSeatPositionCombo" layoutX="260.0" layoutY="157.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Front" />
+                            <String fx:value="Mid" />
+                            <String fx:value="Back" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <Label fx:id="childPriceLabel" alignment="CENTER" layoutX="403.0" layoutY="150.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="47.0" prefWidth="75.0" AnchorPane.leftAnchor="403.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+
+
+                <Label fx:id="studentLabel" layoutX="38.0" layoutY="215.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="100.0" text="Student:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="studentQuantityCombo" layoutX="130.0" layoutY="237.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="0" />
+                            <String fx:value="1" />
+                            <String fx:value="2" />
+                            <String fx:value="3" />
+                            <String fx:value="4" />
+                            <String fx:value="5" />
+                            <String fx:value="6" />
+                            <String fx:value="7" />
+                            <String fx:value="8" />
+                            <String fx:value="9" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <ComboBox fx:id="studentSeatPositionCombo" layoutX="260.0" layoutY="237.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Front" />
+                            <String fx:value="Mid" />
+                            <String fx:value="Back" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <Label fx:id="studentPriceLabel" alignment="CENTER" layoutX="403.0" layoutY="230.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="47.0" prefWidth="75.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+
+
+                <Label fx:id="adultLabel" layoutX="38.0" layoutY="295.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="100.0" text="Adult:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="adultQuantityCombo" layoutX="130.0" layoutY="317.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="0" />
+                            <String fx:value="1" />
+                            <String fx:value="2" />
+                            <String fx:value="3" />
+                            <String fx:value="4" />
+                            <String fx:value="5" />
+                            <String fx:value="6" />
+                            <String fx:value="7" />
+                            <String fx:value="8" />
+                            <String fx:value="9" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <ComboBox fx:id="adultSeatPositionCombo" layoutX="260.0" layoutY="317.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Front" />
+                            <String fx:value="Mid" />
+                            <String fx:value="Back" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <Label fx:id="adultPriceLabel" alignment="CENTER" layoutX="403.0" layoutY="310.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="47.0" prefWidth="75.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+
+
+                <Label fx:id="seniorLabel" layoutX="38.0" layoutY="375.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="100.0" text="Senior:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="seniorQuantityCombo" layoutX="130.0" layoutY="397.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="0" />
+                            <String fx:value="1" />
+                            <String fx:value="2" />
+                            <String fx:value="3" />
+                            <String fx:value="4" />
+                            <String fx:value="5" />
+                            <String fx:value="6" />
+                            <String fx:value="7" />
+                            <String fx:value="8" />
+                            <String fx:value="9" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ComboBox>
+                <ComboBox fx:id="seniorSeatPositionCombo" layoutX="260.0" layoutY="397.0" onAction="#quantityProcess" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="35.0" prefWidth="81.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Front" />
+                            <String fx:value="Mid" />
+                            <String fx:value="Back" />
+                        </FXCollections>
+                    </items>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+
+                </ComboBox>
+                <Label fx:id="seniorPriceLabel" alignment="CENTER" layoutX="403.0" layoutY="390.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="47.0" prefWidth="75.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+
+                <Label fx:id="quantityLabel" layoutX="130.0" layoutY="60.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="115.0" text="Quantity">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="seatPositionLabel" layoutX="260.0" layoutY="60.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="115.0" text="Seat Position">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="160.0" prefWidth="218.0">
+            <children>
+                <Label fx:id="paymentMethodLabel" layoutX="36.0" layoutY="99.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="70.0" prefWidth="158.0" text="Payment Method">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorLabel" alignment="CENTER" layoutX="26.0" layoutY="40.0" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="12.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="creditCardButton" layoutX="40.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchToCreditCardPay" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="50.0" prefWidth="150.0" text="Credit Card">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+                <Button fx:id="giftCardButton" layoutX="40.0" layoutY="235.0" mnemonicParsing="false" onAction="#switchToGiftCardPay" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="50.0" prefWidth="150.0" text="Gift Card">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+                <Button fx:id="cancelButton" layoutX="40.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchToDefaultStage" onKeyPressed="#keyPressed" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="50.0" prefWidth="150.0" text="cancel">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

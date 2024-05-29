@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicketBooking.Actions.CancellationReportStage">
+    <items>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <TableView fx:id="reasonTableView" layoutX="-1000.0" prefHeight="300" prefWidth="200" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="time" prefWidth="150.0" text="Time" />
+                        <TableColumn fx:id="userName" prefWidth="130.0" text="User Name" />
+                        <TableColumn fx:id="reason" prefWidth="270.0" text="Reason" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="218.0">
+            <children>
+                <Label fx:id="helloLabel" layoutX="48.0" layoutY="98.0" prefHeight="47.0" prefWidth="180.0" text="CancellationLog">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+
+                <Button fx:id="backButton" layoutX="43.0" layoutY="600.0" mnemonicParsing="false" onAction="#switchToManageStage" prefHeight="50.0" prefWidth="150.0" text="back">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

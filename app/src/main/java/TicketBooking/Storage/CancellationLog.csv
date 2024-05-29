@@ -1,0 +1,18 @@
+2021/11/02 10:30:47,MasterP,Cancelled at CreditCard Stage
+2021/11/02 10:36:20,MasterP,Invalid Credit Card
+2021/11/02 10:36:23,MasterP,Cancelled at CreditCard Stage
+2021/11/02 13:09:24,MasterP,Cancelled at CreditCard Stage
+2021/11/02 13:09:54,MasterP,Cancelled at CreditCard Stage
+2021/11/02 13:11:55,MasterP,Cancelled at CreditCard Stage
+2021/11/02 13:12:06,MasterP,Cancelled at CreditCard Stage
+2021/11/02 20:24:47,MasterP,Cancel at TicketIssueStage
+2021/11/02 20:37:54,MasterP,Cancel at TicketIssueStage
+2021/11/02 21:46:21,MasterP,Cancelled at CreditCardPayStage due to Idle 
+2021/11/02 21:49:28,MasterP,Invalid Credit Card
+2021/11/02 21:50:22,MasterP,Cancel at TicketIssueStage
+2021/11/02 21:50:32,MasterP,Cancelled at TicketIssueStage due to Idle 
+2021/11/02 21:50:44,MasterP,Cancel at TicketIssueStage
+2021/11/02 21:50:53,MasterP,Cancelled at TicketIssueStage due to Idle 
+2021/11/02 21:53:59,MasterP,Cancel at TicketIssueStage
+2021/11/02 22:04:46,MasterP,Cancelled at CreditCard Stage
+2021/11/03 12:01:33,MasterP,Cancel at TicketIssueStage

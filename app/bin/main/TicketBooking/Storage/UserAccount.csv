@@ -1,0 +1,8 @@
+username, password, type, creditName, number
+MasterP,123456,Customer,Ruth,55134
+MasterG,abcd,Manager,0,0
+MasterL,000000,Customer,0,0
+Jackson,jackson,Staff,0,0
+a,a,Manager,0,0
+foo,bar,Staff,Ben,Ma
+foot,bar,Staff,Jack,Ma
